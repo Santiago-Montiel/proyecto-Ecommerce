@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="PERSISTENCE" transaction-type="JTA">
+    
+    <description>Ecommerce</description>
+        		
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <jta-data-source>jdbc/ecommerceDB</jta-data-source>
+        
+        <class>co.com.ecommerce.entities.Categoria</class>
+        <class>co.com.ecommerce.entities.Marca</class>
+        <class>co.com.ecommerce.entities.MetodoPago</class>
+        <class>co.com.ecommerce.entities.Usuario</class>
+        <class>co.com.ecommerce.entities.Pais</class>
+        <class>co.com.ecommerce.entities.Administrador</class>
+        <class>co.com.ecommerce.entities.Ciudad</class>
+        <class>co.com.ecommerce.entities.Departamento</class>
+        <class>co.com.ecommerce.entities.Empresa</class>
+        <class>co.com.ecommerce.entities.Factura</class>
+        <class>co.com.ecommerce.entities.Producto</class>
+        <class>co.com.ecommerce.entities.Rol</class>
+        <class>co.com.ecommerce.entities.Venta</class>
+        
+        <properties>
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+        
+    </persistence-unit>
+</persistence>
